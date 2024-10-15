@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #ffffff;
+    background-color: #0c1445; /* Dark blue background */
+}
+
+/* Header */
+header {
+    background-color: #091133; /* Darker blue */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #1f2946;
+}
+
+.logo img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    color: #66fcf1;
+    text-shadow: 0 0 10px #66fcf1;
+}
+
+/* Main Content */
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 42px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #66fcf1;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+    padding: 0 20px;
+    color: #ffffff;
+}
+
+/* Section Styling */
+section {
+    background-color: #1f2946;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+section img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+/* Social Links */
+.social-links a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0c1445;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #66fcf1;
+    color: #091133;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #66fcf1;
+}
+
+/* Footer */
+footer {
+    background-color: #091133;
+    padding: 20px;
+    text-align: center;
+    color: #c5c6c7;
+    font-size: 14px;
+}
+
+footer .copyright p {
+    margin: 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
